@@ -17,12 +17,12 @@ export function CartItem({ id, quantity }: CartItemProps) {
     <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
       <img
         src={item.imgUrl}
-        style={{ width: "125px", height: "75px", objectFit: "cover" }}
+        style={{ width: "95px", height: "45px", objectFit: "cover" }}
         alt="item"
       />
       <div className="me-auto">
         <div>
-          {item.name}{" "}
+          {item.name}
           {quantity > 1 && (
             <span style={{ fontSize: ".65rem" }} className="text-muted">
               x {quantity}
